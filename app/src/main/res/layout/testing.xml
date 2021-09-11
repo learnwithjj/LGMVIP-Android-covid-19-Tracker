@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/orange"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/districtData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"></TextView>
+
+            <TextView
+                android:id="@+id/active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:textSize="15sp"></TextView>
+        </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+        <TableRow >
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="Delta"></TextView>
+
+        </TableRow>
+
+
+    </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            >
+
+            <TableRow android:layout_height="49dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="Confirmed"></TextView>
+
+                <TextView
+                    android:id="@+id/confirmed"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"></TextView>
+
+                <TextView
+                    android:id="@+id/dconfirmed"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"></TextView>
+
+
+
+
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="Deceased"></TextView>
+
+                <TextView
+                    android:id="@+id/deceased"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"></TextView>
+
+                <TextView
+                    android:id="@+id/ddeceased"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"></TextView>
+
+
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dip"
+                    android:text="Recovered"></TextView>
+
+                <TextView
+                    android:id="@+id/recovered"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"></TextView>
+
+                <TextView
+                    android:id="@+id/drecovered"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"></TextView>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
